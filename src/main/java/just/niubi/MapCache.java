@@ -38,7 +38,8 @@ public class MapCache {
     public <T> T get(String key){
         CacheObject cacheObject = cachePool.get(key);
         if(null != cacheObject){
-            if(cacheObject.getExpired() <= 0 || cacheObject.getExpired() > System.currentTimeMillis()) {
+            long cur = System.currentTimeMillis() / 1000;
+            if(cacheObject.getExpired() <= 0 || cacheObject.getExpired() > cur) {
                 Object result = cacheObject.getValue();
                 return (T) result;
             }
@@ -77,7 +78,7 @@ public class MapCache {
      * @param expired   过期时间，单位为秒
      */
     public void set(String key, Object value, long expired){
-        expired = expired > 0 ? System.currentTimeMillis() + expired : expired;
+        expired = expired > 0 ? System.currentTimeMillis() / 1000 + expired : expired;
         CacheObject cacheObject = new CacheObject(key, value, expired);
         cachePool.put(key, cacheObject);
     }
@@ -103,7 +104,7 @@ public class MapCache {
      */
     public void hset(String key, String field, Object value, long expired){
         key = key + ":" + field;
-        expired = expired > 0 ? System.currentTimeMillis() + expired : expired;
+        expired = expired > 0 ? System.currentTimeMillis() / 1000 + expired : expired;
         CacheObject cacheObject = new CacheObject(key, value, expired);
         cachePool.put(key, cacheObject);
     }
