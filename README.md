@@ -6,9 +6,9 @@
 
 |   文件名 	|       简介      | 测试代码 |
 | ----------- |:--------------:|:-------:|
-| [HttpRequest](src/main/java/just/niubi/HttpRequest.java) | Http网络请求，可以进行GET,POST等请求 |[查看](src/test/java/just/niubi/httprequest)|
-| [MapCache](src/main/java/just/niubi/MapCache.java) | 使用Map模拟缓存实现 |[查看](src/test/java/just/niubi/mapcache)|
-
+| [HttpRequest](src/main/java/just/niubi/http/HttpRequest.java) | Http网络请求，可以进行GET,POST等请求 |[查看](src/test/java/just/niubi/httprequest)|
+| [MapCache](src/main/java/just/niubi/cache/MapCache.java) | 使用Map模拟缓存实现 |[查看](src/test/java/just/niubi/mapcache)|
+| [Json](src/main/java/just/niubi/json/Json.java) | 使用Map模拟缓存实现 |[查看](src/test/java/just/niubi/json)|
 
 
 ----

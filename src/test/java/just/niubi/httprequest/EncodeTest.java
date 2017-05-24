@@ -23,9 +23,9 @@ package just.niubi.httprequest;
 
 import static org.junit.Assert.assertEquals;
 
-import static just.niubi.HttpRequest.*;
+import static just.niubi.http.HttpRequest.*;
 
-import just.niubi.HttpRequest;
+import just.niubi.http.HttpRequest;
 import org.junit.Test;
 
 /**

@@ -35,7 +35,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static just.niubi.HttpRequest.CHARSET_UTF8;
+import static just.niubi.http.HttpRequest.CHARSET_UTF8;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

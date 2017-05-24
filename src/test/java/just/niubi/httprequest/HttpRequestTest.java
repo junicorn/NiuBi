@@ -21,15 +21,15 @@
  */
 package just.niubi.httprequest;
 
-import static just.niubi.HttpRequest.CHARSET_UTF8;
-import static just.niubi.HttpRequest.delete;
-import static just.niubi.HttpRequest.encode;
-import static just.niubi.HttpRequest.get;
-import static just.niubi.HttpRequest.head;
-import static just.niubi.HttpRequest.options;
-import static just.niubi.HttpRequest.post;
-import static just.niubi.HttpRequest.put;
-import static just.niubi.HttpRequest.trace;
+import static just.niubi.http.HttpRequest.CHARSET_UTF8;
+import static just.niubi.http.HttpRequest.delete;
+import static just.niubi.http.HttpRequest.encode;
+import static just.niubi.http.HttpRequest.get;
+import static just.niubi.http.HttpRequest.head;
+import static just.niubi.http.HttpRequest.options;
+import static just.niubi.http.HttpRequest.post;
+import static just.niubi.http.HttpRequest.put;
+import static just.niubi.http.HttpRequest.trace;
 import static java.net.HttpURLConnection.HTTP_BAD_REQUEST;
 import static java.net.HttpURLConnection.HTTP_CREATED;
 import static java.net.HttpURLConnection.HTTP_INTERNAL_ERROR;
@@ -43,10 +43,10 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import just.niubi.HttpRequest;
-import just.niubi.HttpRequest.HttpRequestException;
-import just.niubi.HttpRequest.ConnectionFactory;
-import just.niubi.HttpRequest.UploadProgress;
+import just.niubi.http.HttpRequest;
+import just.niubi.http.HttpRequest.HttpRequestException;
+import just.niubi.http.HttpRequest.ConnectionFactory;
+import just.niubi.http.HttpRequest.UploadProgress;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

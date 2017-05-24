@@ -1,4 +1,4 @@
-package just.niubi;
+package just.niubi.cache;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

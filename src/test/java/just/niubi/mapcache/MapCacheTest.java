@@ -1,6 +1,6 @@
 package just.niubi.mapcache;
 
-import just.niubi.MapCache;
+import just.niubi.cache.MapCache;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
