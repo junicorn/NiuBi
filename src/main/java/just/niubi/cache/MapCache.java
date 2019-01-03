@@ -42,6 +42,10 @@ public class MapCache {
             if(cacheObject.getExpired() <= 0 || cacheObject.getExpired() > cur) {
                 Object result = cacheObject.getValue();
                 return (T) result;
+            }else {
+                //expire cache
+                del(key);
+                return null;
             }
         }
         return null;
